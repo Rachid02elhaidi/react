@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
-import "./SocialMedia.css";
-import axios from "axios";
+import React from "react";
+import "./style.css";
+// import axios from "axios";
+import data from "../js/data.json"
 
 const SocialMedia = () => {
-  const [social, setSocial] = useState([]);
-  useEffect(() => {
-    axios.get("js/data.json").then((res) => {
-      setSocial(res.data.social);
-    });
-  }, []);
-  const socialList = social.map((item) => {
+  // const [social, setSocial] = useState([]);
+  // useEffect(() => {
+    console.log(data.social);
+  //   axios.get(daba).then((res) => {
+  //     setSocial(res.data.social);
+  //   });
+  // }, []);
+  const socialList = data.social.map((item) => {
     return (
       <div className="social" key={item.id}>
         <i className={item.icon}></i>

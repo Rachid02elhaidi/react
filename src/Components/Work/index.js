@@ -1,18 +1,21 @@
 import React, { Component } from "react";
-import "./Work.css";
-import axios from "axios";
+import "./style.css";
+// import axios from "axios";
+import data from "../js/data.json"
 
 class Work extends Component {
   state = {
-    works: [],
+    works: data.works,
   };
-  componentDidMount() {
-    axios.get("js/data.json").then((res) => {
-      this.setState({ works :res.data.works });
-    });
-  }
+  // componentDidMount() {
+  //   axios.get("js/data.json").then((res) => {
+    //     this.setState({ works :res.data.works });
+  //   });
+  // }
+  
   render() {
     const {works} = this.state
+    console.log(works);
     const worksList = works.map((item) => {
       return(
         <div className="part" key={item.id}>

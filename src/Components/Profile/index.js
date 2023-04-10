@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
-import "./Profile.css";
-import axios from "axios";
+import "./style.css";
+// import axios from "axios";
+import data from "../js/data.json"
 
 const Profile = () => {
-  const [skill, setSkill] = useState([]);
-  useEffect(() => {
-    axios.get("js/data.json").then((res) => {
-      setSkill(res.data.skills);
-    });
-  }, []);
-  const ourSkills = skill.map((item, index) => {
+  // const [skill, setSkill] = useState([]);
+  // useEffect(() => {
+  //   axios.get("js/data.json").then((res) => {
+  //     setSkill(res.data.skills);
+  //   });
+  // }, []);
+  const ourSkills = data.skills.map((item, index) => {
     return (
       <div className="bar" key={index}>
         <span className="title">{item.skillName}</span>

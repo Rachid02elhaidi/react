@@ -1,15 +1,16 @@
 import { Component } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar"
-import Home from "./Components/Home/Home"
-import About from "./Components/About/About"
-import Profile from "./Components/Profile/Profile"
-import Portfolio from "./Components/Portfolio/Portfolio"
-import SocialMedia from "./Components/SocialMedia/SocialMedia" 
-import Work from "./Components/Work/Work"
-import Footer from "./Components/Footer/Footer"
-import Contact from "./Components/Contact/Contact"
+import Navbar from "./Components/Navbar/index"
+import Home from "./Components/Home/index"
+import About from "./Components/About/index"
+import Profile from "./Components/Profile/index"
+import Portfolio from "./Components/Portfolio/index"
+import SocialMedia from "./Components/SocialMedia/index" 
+import Work from "./Components/Work/index"
+import Footer from "./Components/Footer/index"
+import Contact from "./Components/Contact/index"
+import "./Components/images/Portfolio/portfolio-img1.jpg"
 
 class App extends Component {
   render() {

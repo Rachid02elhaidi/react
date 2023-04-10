@@ -1,5 +1,5 @@
 import React from "react";
-import {FooterFa,Pa} from "./style.jsx"
+import {FooterFa,Pa} from "./style.js"
 
 const Footer = () => {
   return (
